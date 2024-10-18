@@ -1,9 +1,10 @@
 "use client";
 
+import React, { Suspense } from "react";
 import GoBack from "@/components/GoBack";
 import { useQueryState } from "nuqs";
 
-export default function Nuqs() {
+function NuqsComponent() {
   const [text, setText] = useQueryState("text");
 
   return (
@@ -50,5 +51,13 @@ export default function Nuqs() {
         </div>
       </div>
     </>
+  );
+}
+
+export default function Nuqs() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <NuqsComponent />
+    </Suspense>
   );
 }

@@ -1,3 +1,5 @@
+"use client"
+
 import GoBack from "@/components/GoBack";
 import {
   Accordion,
