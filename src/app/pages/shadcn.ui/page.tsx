@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export function ShadcnUI() {
+export default function ShadcnUI() {
   return (
     <div className="p-10">
       <GoBack />

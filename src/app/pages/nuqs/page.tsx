@@ -3,7 +3,7 @@
 import GoBack from "@/components/GoBack";
 import { useQueryState } from "nuqs";
 
-export function Nuqs() {
+export default function Nuqs() {
   const [text, setText] = useQueryState("text");
 
   return (
