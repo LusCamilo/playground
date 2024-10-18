@@ -1,5 +1,6 @@
-"use client"
+"use client";
 
+import GoBack from "@/components/GoBack";
 import React from "react";
 import {
   LineChart,
@@ -22,6 +23,7 @@ function Recharts() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  p-6">
+      <GoBack />
       <h1 className="text-4xl font-bold mb-8 text-white">Recharts</h1>
 
       <div className="flex justify-center items-center flex-col bg-white shadow-lg rounded-lg p-6 mb-8 w-1/2">
